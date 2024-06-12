@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Euphoria+Script&family=Libre+Baskerville:wght@700&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #a29670;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.intro {
+    display: flex;
+    width: 100%;
+    height: 710px;
+    margin: auto;
+    background-image: url(https://media.houseandgarden.co.uk/photos/6189435c0a583de660124c9d/master/w_1600%2Cc_limit/annie-spratt-ikfieo6cd7y-unsplash.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+}
+
+    .intro > h1 {
+        font-family: 'Playfair Display';
+        font-style: italic;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        font-size: 55px;
+        border-bottom: 2px;
+        letter-spacing: 5px;
+        height: 55px;
+        align-self: center;
+        text-decoration: underline;
+    }
+
+.nav {
+    font-size: 18px;
+    /*	position: fixed;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    color: #000;
+    z-index: 5;
+    margin: 0px;
+    list-style: none;
+    fill-opacity: 70%;
+    border-bottom: solid black;
+}
+
+#logo {
+    display: flex;
+}
+
+header {
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+    padding: 0px;
+}
+
+.tab {
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 25.5px;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Playfair Display';
+    font-size: 15px;
+    color: #a26765;
+    margin: 10px 0px 0px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+    justify-content: flex-end;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.polaroid-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    flex-direction: row;
+    width: 50%;
+    height: auto;
+    align-content: center;
+}
+
+h1.polaroid-text {
+    font-style: italic;
+    font-family: 'Playfair Display';
+    color: beige;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 5;
+}
+
+/*.polaroid-text h1 {*/
+/*h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Migra';
+    color: beige;
+    border-bottom: 1px beige;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    transform: rotate(270deg);
+    height: 130px;
+    letter-spacing: 20px;
+    flex-direction: column;
+    position:absolute;
+    right: 500;
+    top: 1300;
+}*/
+
+.polaroid {
+    display: flex;
+    width: 275px;
+    height: 380px;
+    background-color: #ece2da;
+    justify-content: center;
+    border: 1px solid #ece2da;
+    padding: 5px;
+    box-shadow: 3px 3px #412f26;
+    margin: 10px 10px;
+    flex-direction: column;
+}
+
+.polaroid img {
+    height: 300px;
+    margin: 20px 20px 10px 20px;
+}
+
+.caption {
+    height: 50px;
+    font-family:'TaylorSwiftHandwriting';
+    font-size: 25px;
+    text-align: right;
+    margin: 5px;
+    height: 30px;
+}
+
+.washi {
+    position: absolute;
+    border: 1px none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    background: repeating-linear-gradient(90deg, #e7e5d9 20px, #9c8866 30px, #d9dacc 20px);
+}
+
+.tape1 {
+    top: 150;
+    left: 65;
+}
+
+.film-photographs {
+    display: flex;
+    width: 1000px;
+    height: 900px;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    background: #a29670;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.film-photographs img {
+    display: flex;
+    height: 500px;
+}
+
+.box {
+    background-color: #736c49;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.box-dark {
+    background-color: #4d4728;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.sq-text {
+    font-family: 'Playfair Display';
+    color: #e6cf9d;
+    letter-spacing: 2px;
+}
+
+/*.sq1, .sq2, .sq3 {
+    display: flex;
+    width: 720px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sq-text {
+    display: flex;
+    width: 720px;
+    height: 300px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.sq-text > h1, h3 {
+    display: flex;
+    width: 720px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}*/

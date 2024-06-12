@@ -1,0 +1,262 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Euphoria+Script&family=Libre+Baskerville:wght@700&family=Playfair+Display&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #e3ded1;
+	width: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.nav {
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 70px;
+	width: 100%;
+	color: #000;
+	z-index: 5;
+	margin: 0px;
+	list-style: none;
+	border-bottom: solid darkolivegreen;
+}
+
+#logo {
+	display: flex;
+}
+
+header {
+	font-family: 'Playfair Display';
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 1px;
+	width: 280px;
+	text-align: center;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.tabs {
+	display: flex;
+	list-style: none;
+	column-gap: 10px;
+	padding: 0px;
+}
+
+.tab {
+	margin: 5px;
+	cursor: pointer;
+	margin-top: 25.5px;
+	margin-bottom: 25px;
+	font-family: 'Playfair Display';
+	font-weight: bold;
+}
+
+.container {
+	background-image: url(https://4.bp.blogspot.com/-bRElZp63yKY/VCWpJBXppUI/AAAAAAAAC0E/fffM7I_aDPE/s1600/DSC_0003-005.JPG);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-content: center;
+	height: 100%;
+}
+
+.welcome-container {
+	display: flex;
+	width: 500px;
+	height: 590px;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.welcome {
+	display: flex;
+	border: solid beige;
+	color: black;
+	background: beige;
+	opacity: 60%;
+	border-radius: 60%;
+	text-align: center;
+	align-content: center;
+	width: 500px;
+	height: 450px;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'Playfair Display';
+}
+
+.welcome h1 {
+	flex-wrap: wrap;
+	align-self: center;
+	font-size: 48px;
+	margin: 0;
+}
+
+.welcome h3 {
+	font-style: italic;
+}
+
+#image {
+	height: 590px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+#image > img {
+	width: 370px;
+	height: 480px;
+}
+
+.glyph {
+	font-size: 85px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.about-container {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	background: #e3ded1;
+	flex-flow: row wrap;
+}
+
+.plans {
+	width: 50%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	/*	margin: 0 auto;*/
+	align-content: center;
+	flex-direction: row;
+}
+
+.about-text {
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+	.about-text > h1 {
+		text-align: center;
+		color: darkolivegreen;
+		border-bottom: solid darkolivegreen;
+		border-radius: 80%;
+		width: 80%;
+		font-family: 'Playfair Display';
+		font-size: 45px;
+	}
+
+.flex-container {
+	width: 50%;
+	height: 400px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	background-color: darkolivegreen;
+	color: #e3ded1;
+}
+
+	.flex-container > div {
+		border-radius: 10%;
+		width: 35%;
+		height: 150px;
+		text-align: center;
+		font-size: 15px;
+		padding: 10px;
+		color: #e3ded1;
+		display: flex;
+		flex-direction: column;
+		/*	flex-direction: row;*/
+		align-content: space-between;
+	}
+
+.box {
+	border: solid #e3ded1;
+	margin: 5px;
+	font-family: 'Playfair Display';
+}
+
+.box > h1 {
+	font-size: 25px;
+}
+
+.box > p {
+	margin: 10px 0px;
+	font-size: 15px;
+}
+
+.why-box {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+	.why-box > h1 {
+		text-align: center;
+		color: darkolivegreen;
+		border: solid darkolivegreen;
+		border-radius: 80%;
+		width: 500px;
+		height: 90px;
+		font-family: 'Playfair Display';
+		transform: rotate(330deg);
+		align-items: center;
+		display: block;
+	}
+
+.container2 {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 410px;
+}
+
+.why-text {
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	width: 50%;
+	max-height: 420px;
+	flex-wrap: wrap;
+	background-color: darkolivegreen;
+	color: #e3ded1;
+}
+
+	.why-text > p {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		font-family: 'Playfair Display';
+		font-size: 30px;
+		text-align: center;
+		width: 100%;
+		height: 50%;
+	}

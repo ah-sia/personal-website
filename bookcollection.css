@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Euphoria+Script&family=Libre+Baskerville:wght@700&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #D4C9b4;
+    height: 900px;
+    width: 100%;
+    font-family: 'Playfair Display';
+}
+
+.nav {
+    font-size: 18px;
+    /*	position: fixed;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    color: #741102;
+    z-index: 5;
+    margin: 0px;
+    list-style: none;
+    fill-opacity: 70%;
+    border-bottom: solid #741102;
+}
+
+#logo {
+    display: flex;
+}
+
+header {
+    font-family: 'Playfair Display';
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 1px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link {
+    text-decoration: none;
+    color: #741102;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    column-gap: 10px;
+    padding: 0px;
+    /*	margin-right: 20px;*/
+}
+
+.tab {
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 25.5px;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+}
+
+.book-intro {
+    display: flex;
+    width: 100%;
+    height: 710px;
+    background-image: url(https://i.pinimg.com/564x/03/27/79/032779b9994cd84fe63c142f0e306810.jpg);
+    background-size: 100% 710px;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+}
+
+.book-library {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display';
+    text-align: center;
+    justify-content: center;
+    background: rgba(116,17,2, 0.7);
+    color: #ede2ca;
+    border-radius: 50%;
+    margin: 0px 10px;
+    height: 85%;
+    align-content: center;
+}
+
+.top10-books {
+   padding: 5px;
+   margin: 10px;
+   background-color: rgba(116,17,2,1.0);
+   height: auto;
+}
+
+    .top10-books h1 {
+        display: flex;
+        text-align: center;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: #D4C9b4;
+        height: 60px;
+        align-items: center;
+        font-size: 35px;
+        font-style: italic;
+    }
+
+/* slider */
+
+li {
+    list-style: none;
+    margin: 5px 0px;
+    color: #D4C9b4;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.js-slider {
+    position: relative;
+    width: 80%;
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.js-slider_item {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right center;
+    transform: translate3d(0%, 0%, 0) rotateY(30deg) scaleX(0.95);
+    transition: all 1s ease,transform 1s cubic-bezier(0.43, 0.28, 0.51, 1);
+}
+
+#s-1:checked ~ .js-slider .js-slider_item.img-1,
+#s-2:checked ~ .js-slider .js-slider_item.img-2,
+#s-3:checked ~ .js-slider .js-slider_item.img-3,
+#s-4:checked ~ .js-slider .js-slider_item.img-4,
+#s-5:checked ~ .js-slider .js-slider_item.img-5,
+#s-6:checked ~ .js-slider .js-slider_item.img-6,
+#s-7:checked ~ .js-slider .js-slider_item.img-7,
+#s-8:checked ~ .js-slider .js-slider_item.img-8,
+#s-9:checked ~ .js-slider .js-slider_item.img-9,
+#s-10:checked ~ .js-slider .js-slider_item.img-10 {
+    opacity: 1;
+    visibility: visible;
+    transform-origin: left center;
+    transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
+}
+
+.js-slider_img {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-img-w-full {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 40%;
+    height: 100%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.c-img-h-full {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+figcaption {
+    display: block;
+
+
+}
+
+.wo-h3 {
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #D4C9b4;
+    color: #D4C9b4;
+}
+
+.c-label {
+    display: inline-block;
+    color: #741102;
+    background-color: #D4C9b4;
+    line-height: 1;
+    padding: 0.5em 0.9em;
+    margin-right: 0.5em;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.view-sm {
+    display: none;
+}
+
+.js-slider_nav {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.js-slider_nav_item.prev {
+    left: 0;
+}
+
+.js-slider_nav_item.next {
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.js-slider_nav_item {
+    position: absolute;
+    display: none;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #D4C9b4;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+    .js-slider_nav_item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 1rem;
+        top: 55%;
+        width: 1rem;
+        height: 1px;
+        background-color: #D4C9b4;
+        transform-origin: left bottom;
+        transform: translate3d(0, -50%, 0) rotate(-45deg);
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .js-slider_nav_item:hover {
+        transform: translate3d(-30%, 0, 0);
+    }
+
+    .js-slider_nav_item.next:hover {
+        transform: rotateY(180deg) translate3d(-30%, 0, 0);
+    }
+
+    .js-slider_nav_item:hover:before {
+        transform: translate3d(0, -50%, 0) rotate(-30deg);
+    }
+
+    .js-slider_nav_item:after {
+        content: "";
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 2rem;
+        height: 1px;
+        background-color: #D4C9b4;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+#s-1:checked ~ .js-slider .js-slider_nav .s-nav-1,
+#s-2:checked ~ .js-slider .js-slider_nav .s-nav-2,
+#s-3:checked ~ .js-slider .js-slider_nav .s-nav-3,
+#s-4:checked ~ .js-slider .js-slider_nav .s-nav-4,
+#s-5:checked ~ .js-slider .js-slider_nav .s-nav-5,
+#s-6:checked ~ .js-slider .js-slider_nav .s-nav-6,
+#s-7:checked ~ .js-slider .js-slider_nav .s-nav-7,
+#s-8:checked ~ .js-slider .js-slider_nav .s-nav-8,
+#s-9:checked ~ .js-slider .js-slider_nav .s-nav-9,
+#s-10:checked ~ .js-slider .js-slider_nav .s-nav-10 {
+    display: block;
+}
+
+.js-slider_indicator {
+    position: absolute;
+    left: 0;
+    top: 61%;
+    width: 100%;
+    text-align: center;
+}
+
+.js-slider-indi {
+    position: relative;
+    display: inline-block;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+    .js-slider-indi:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 1rem;
+        background: #D4C9b4;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    .js-slider-indi:hover:after {
+        transform: translate3d(-50%, -50%, 0) scale(1.5);
+        transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+#s-1:checked ~ .js-slider .js-slider_indicator .indi-1:after,
+#s-2:checked ~ .js-slider .js-slider_indicator .indi-2:after,
+#s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after,
+#s-4:checked ~ .js-slider .js-slider_indicator .indi-4:after,
+#s-5:checked ~ .js-slider .js-slider_indicator .indi-5:after,
+#s-6:checked ~ .js-slider .js-slider_indicator .indi-6:after,
+#s-7:checked ~ .js-slider .js-slider_indicator .indi-7:after,
+#s-8:checked ~ .js-slider .js-slider_indicator .indi-8:after,
+#s-9:checked ~ .js-slider .js-slider_indicator .indi-9:after,
+#s-10:checked ~ .js-slider .js-slider_indicator .indi-10:after
+{
+    transform: translate3d(-50%, -50%, 0) scale(2.5);
+}
